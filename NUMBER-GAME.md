@@ -3,15 +3,10 @@ Walkthrough: JavaScript Number Game
 
 1. Start here:
 
-<<<<<<< HEAD:NUMBER-GAME.md
 ```
     function playGame() {
     }
 ```
-=======
-	function playGame() {
-	}
->>>>>>> 284eb82fa0524a868c14dc53a22f7a8612eb1fc5:NUMBER_GAME.md
 
 2. Then think: How do I allow someone to type a number?
 
@@ -41,12 +36,8 @@ Walkthrough: JavaScript Number Game
 
 5. You need to tell the player whether the number is right or wrong, too high or too low:
 
-<<<<<<< HEAD:NUMBER-GAME.md
 ```
     function playGame() {
-=======
-        function playGame() {
->>>>>>> 284eb82fa0524a868c14dc53a22f7a8612eb1fc5:NUMBER_GAME.md
         var num = prompt("Type a number from 1 to 10:");
         
         var guess = 1 + Math.floor(Math.random() * 10);
@@ -57,12 +48,8 @@ Walkthrough: JavaScript Number Game
     		num = prompt("Too low! You may guess again: ");
         } else {
     		num = prompt("Too high! You may guess again: ");
-<<<<<<< HEAD:NUMBER-GAME.md
     }
 ```
-=======
-    	}
->>>>>>> 284eb82fa0524a868c14dc53a22f7a8612eb1fc5:NUMBER_GAME.md
 
 6. The next question is: What will you do with the new num provided by the player? Hm … Is this a good time for a loop? Which kind of loop?
 	+ How many times should the player be allowed to guess?
