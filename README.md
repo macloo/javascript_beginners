@@ -7,6 +7,8 @@ These are files for teaching JavaScript to beginners.
 
 Having a foundation in JavaScript makes it easier to learn [jQuery](http://jquery.com/), which is a JavaScript library.
 
+Here's a Powerpoint I use in class: [JavaScript 101](http://www.slideshare.net/macloo/javascript-101-16754994).
+
 ##number.html + scripts/number.js
 
 This HTML page and its accompanying JavaScript file are designed as an exercise using pop-up dialog boxes. You'll code a number-guessing game. You should be able to do this exercise if you have completed exercises 1-8 in [Codecademy's JavaScript track](http://www.codecademy.com/tracks/javascript).
