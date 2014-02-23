@@ -1,0 +1,63 @@
+/* form styles */
+
+.textfield {
+	background: #f5f774;
+	font-family: Courier, "Courier New", monotype;
+	font-size: 100%;
+	border: none;
+	padding: 10px;
+	}
+
+textarea {
+	width: 460px;
+	height: 150px;
+	margin-left: 20px;
+	resize: none;
+	}
+
+#buttons {
+	padding: 20px;
+	}
+
+.btn {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 80%;
+	padding: 6px 10px;
+	border: 1px solid #999;
+    background: #9cf;
+	}
+
+.btn:hover {
+    border: 1px solid #f00;
+    background: #fff;
+	}
+
+/* add a little space at the bottom of the form */
+form {
+	padding-bottom: 30px;
+	}
+
+/* list styles for the form */
+
+ol {
+	margin-left: 50px;
+	}
+
+ol ul {
+	list-style: none;
+	margin-left: 10px;
+	padding-right: 10px;
+	}
+
+ol > li {
+	padding-top: 10px;
+	}
+	/* greater-than sign limits this to only the li's that are 
+	directly descended from the ol - not the nested list li's. 
+	take out the > and you'll see a big change 
+	*/
+
+li {
+	line-height: 1.4em;
+	padding-bottom: 5px;
+	}

@@ -1,0 +1,29 @@
+/* special list styles */
+
+ol, ul {
+	margin-left: 50px;
+	}
+
+ol ol {
+	padding-top: 10px;
+	margin-left: 30px;
+	}
+
+div > ol {
+	padding-bottom: 20px;
+	}
+	/* greater-than sign limits this to only an ol that is 
+	directly descended from a div. 
+	take out the > and you'll see a big change 
+	*/
+
+li {
+	line-height: 1.4em;
+	padding-bottom: 5px;
+	}
+
+/* add to or override base.css */
+
+#wrapper {
+	padding-top: 20px;
+	}

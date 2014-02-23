@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic JavaScript Quiz</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/quiz.css">
+	<script src="scripts/quiz.js"></script>
+</head>
+<body>
+<div id="wrapper">
+
+
+
+<!-- this quiz has a nice, logical format that uses nested lists 
+     so the numbering and indenting can be controlled easily in CSS
+     -->
+
+<h1>JavaScript-Driven Quiz</h1>
+
+<form name="quiz">
+
+<ol>
+
+<li>What does CSS stand for?</li>
+<ul>
+  <li><input type="radio" name="q1" value="colorful"> 
+  Colorful Style Symbols</li>
+  <li><input type="radio" name="q1" value="cascading"> 
+  Cascading Style Sheets</li>
+  <li><input type="radio" name="q1" value="computer"> 
+  Computer State Secrets</li>
+</ul>
+
+<li>What are the list types in HTML?</li>
+<ul>
+  <li><input type="radio" name="q2" value="ul_ol_dl"> 
+  UL, OL, DL</li>
+  <li><input type="radio" name="q2" value="alist"> 
+  A-list, B-list, C-list</li>
+  <li><input type="radio" name="q2" value="unlisted"> 
+  unlisted, overlisted, dynamic lists</li>
+</ul>
+
+<li>Which of the following are tags specific to HTML5?</li>
+<ul>
+  <li><input type="radio" name="q3" value="input"> 
+  input, textarea, submit, radio</li>
+  <li><input type="radio" name="q3" value="div"> 
+  div, head, img, body</li>
+  <li><input type="radio" name="q3" value="nav"> 
+  nav, article, footer, section</li>
+</ul>
+
+<li>What is the difference between JavaScript and Java?</li>
+<ul>
+  <li><input type="radio" name="q4" value="none"> 
+  There is no difference.</li>
+  <li><input type="radio" name="q4" value="flavor"> 
+  JavaScript is a "flavor" of Java.</li>
+  <li><input type="radio" name="q4" value="carpet"> 
+  Java and Javascript are similar like Car and Carpet are similar.</li>
+</ul>
+
+</ol>
+
+<div id="buttons">
+<!-- onClick="getScore(this.form) means "run the JavaScript function 
+     named getScore() and pass in the values from this form as the 
+     argument" - notice, it's NOT a submit button -->
+
+<input class="btn" type="button" value="Get Score" onClick="getScore(this.form)"> 
+
+<!-- this is a standard reset button for HTML forms -->
+<input class="btn" type="reset" value="Clear Answers">
+</div>
+
+<p>Your score = <input name="percentage" type="text" class="textfield" size="5" disabled></p>
+<!-- disabled so users cannot type inside -->
+
+<p>Correct answers:</p>
+
+<textarea name="solutions" class="textfield" wrap="virtual" disabled></textarea> 
+<!-- disabled so users cannot type inside -->
+
+</form>
+
+
+<p>Adapted from <a href="http://www.javascriptsource.com/miscellaneous/basic-javascript-quiz.html">The JavaScript Source</a></p>
+
+
+
+</div>
+</body>
+</html>
