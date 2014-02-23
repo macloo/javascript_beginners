@@ -3,8 +3,8 @@ Walkthrough: JavaScript Number Game
 
 1. Start here:
 
-    function playGame() {
-    }
+	function playGame() {
+	}
 
 2. Then think: How do I allow someone to type a number?
 
@@ -28,7 +28,7 @@ Walkthrough: JavaScript Number Game
 
 5. You need to tell the player whether the number is right or wrong, too high or too low:
 
-    function playGame() {
+        function playGame() {
         var num = prompt("Type a number from 1 to 10:");
         
         var guess = 1 + Math.floor(Math.random() * 10);
