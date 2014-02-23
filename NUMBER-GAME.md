@@ -1,6 +1,13 @@
 Walkthrough: JavaScript Number Game
 ===================================
 
+This is a JavaScript exercise for beginners. After finishing the [Codecademy lessons from 1 through 8](http://www.codecademy.com/tracks/javascript), you should be able to make this game using the two files provided here:
+
++ number.html
++ scripts/number.js
+
+Try to solve it with just those two files! Then, if you get stuck, read on here, below ...
+
 1. Start here:
 
     ```
