@@ -3,58 +3,60 @@ Walkthrough: JavaScript Number Game
 
 1. Start here:
 
-```
-    function playGame() {
-    }
-```
+    ```
+        function playGame() {
+        }
+    ```
 
 2. Then think: How do I allow someone to type a number?
 
-```
-    function playGame() {
-        prompt("Type a number from 1 to 10:");
-    }
-```
+    ```
+        function playGame() {
+            prompt("Type a number from 1 to 10:");
+        }
+    ```
 
 3. How can you use that number? You need it to be stored in a variable:
 
-```
-    function playGame() {
-        var num = prompt("Type a number from 1 to 10:");
-    }
-```
+    ```
+        function playGame() {
+            var num = prompt("Type a number from 1 to 10:");
+        }
+    ```
 
 4. You also need to generate a random number and store it in a variable:
 
-```
-    function playGame() {
-        var num = prompt("Type a number from 1 to 10:");
-        
-        var guess = 1 + Math.floor(Math.random() * 10);
-    }
-```
+    ```
+        function playGame() {
+            var num = prompt("Type a number from 1 to 10:");
+            
+            var guess = 1 + Math.floor(Math.random() * 10);
+        }
+    ```
 
 5. You need to tell the player whether the number is right or wrong, too high or too low:
 
-```
-    function playGame() {
-        var num = prompt("Type a number from 1 to 10:");
-        
-        var guess = 1 + Math.floor(Math.random() * 10);
-        
-        if (num == guess) {
-    		alert("You win! The number was " + guess + ".");
-        } else if (num < guess) {
-    		num = prompt("Too low! You may guess again: ");
-        } else {
-    		num = prompt("Too high! You may guess again: ");
-    }
-```
+    ```
+        function playGame() {
+            var num = prompt("Type a number from 1 to 10:");
+            
+            var guess = 1 + Math.floor(Math.random() * 10);
+            
+            if (num == guess) {
+    	    	alert("You win! The number was " + guess + ".");
+            } else if (num < guess) {
+        		num = prompt("Too low! You may guess again: ");
+            } else {
+    		    num = prompt("Too high! You may guess again: ");
+        }
+    ```
 
 6. The next question is: What will you do with the new num provided by the player? Hm … Is this a good time for a loop? Which kind of loop?
 	+ How many times should the player be allowed to guess?
 	+ What will happen each time?
 	+ What happens when he/she runs out of tries? 
+
+There's more to do; it's not all spelled out here.
 
 You can do a lot of things will this small game. You will learn a lot if you try to limit the number of guesses and give appropriate feedback to the player for each guess, for a win, and for losing.
 
