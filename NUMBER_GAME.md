@@ -39,7 +39,7 @@ Walkthrough: JavaScript Number Game
     		num = prompt("Too low! You may guess again: ");
         } else {
     		num = prompt("Too high! You may guess again: ");
-    }
+    	}
 
 6. The next question is: What will you do with the new num provided by the player? Hm … Is this a good time for a loop? Which kind of loop?
 	+ How many times should the player be allowed to guess?
