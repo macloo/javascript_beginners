@@ -25,10 +25,13 @@ textarea {
 
 .btn {
 	font-family: Verdana, Arial, sans-serif;
-	font-size: 80%;
+	font-size: 0.8em;
 	padding: 6px 10px;
 	border: 1px solid #999;
     background: #9cf;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
 	}
 
 .btn:hover {
@@ -38,6 +41,7 @@ textarea {
 
 input[type=radio] {
 	cursor: pointer;
+	margin-right: 5px;
 	}
 
 

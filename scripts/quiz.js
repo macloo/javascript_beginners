@@ -16,13 +16,14 @@ answers.push("ul_ol_dl");
 answers.push("nav");
 answers.push("carpet");
 
-// insert correct answers to questions - be careful about the order 
+// insert full correct answers to questions - be careful about the order 
 answerstext.push("Cascading Style Sheets");
 answerstext.push("UL, OL, DL");
 answerstext.push("nav, article, footer, section");
 answerstext.push("Java and Javascript are similar like Car and Carpet are similar.");
 
 // do not change anything below ...
+// this function checks all the answers and calculates the score
 function getScore(form) {
   var score = 0;
   var currElt; // current element 
