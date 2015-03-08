@@ -54,6 +54,7 @@ input[disabled], textarea[disabled], select[disabled='disabled'] {
 	-webkit-text-fill-color: rgba(0, 0, 0, 1);
 	-webkit-opacity: 1;
 	color: rgba(0, 0, 0, 1);
+	background: #f5f774;
 	}
 
 /* add a little space at the bottom of the form */
