@@ -11,6 +11,7 @@ textarea {
 	background: #f5f774;
 	font-family: monospace;
 	font-size: 1.2em;
+	color: #000;
 	border: none;
 	padding: 10px;
 	}
@@ -48,6 +49,13 @@ input[type=radio] {
 	margin-right: 5px;
 	}
 
+/* fixes a color problem in iOS */
+input[disabled], textarea[disabled], select[disabled='disabled'] {
+	-webkit-text-fill-color: rgba(0, 0, 0, 1);
+	-webkit-opacity: 1;
+	color: rgba(0, 0, 0, 1);
+	background: #f5f774;
+	}
 
 /* add a little space at the bottom of the form */
 form {
