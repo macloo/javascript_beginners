@@ -28,6 +28,7 @@ h1, h2 {
 	font-family: Cambria, Georgia, serif;
 	font-size: 2em;
 	font-weight: normal;
+	line-height: 2.2em;
 	padding: 20px 0 10px 0;
 	}
 
@@ -59,5 +60,5 @@ a:hover {
 /* media queries */
 
 @media only screen and (max-width: 740px) {
-	#container { border: none; }
+	#wrapper { border: none; }
 }
