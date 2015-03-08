@@ -1,95 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<title>Basic JavaScript Quiz</title>
+	<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/quiz.css">
-	<script src="scripts/quiz.js"></script>
 </head>
+
 <body>
+<!-- NOTE: .js file is at bottom of page -->
 <div id="wrapper">
 
 
-
-<!-- this quiz has a nice, logical format that uses nested lists 
-     so the numbering and indenting can be controlled easily in CSS
+<!-- this quiz has a nice logical format that uses nested lists, 
+     so the numbering and indenting can be controlled easily in CSS 
+     using UL, OL and LI 
      -->
 
 <h1>JavaScript-Driven Quiz</h1>
 
-<form name="quiz">
 
-<ol>
+<!-- a form must begin with a FORM tag 
+     -------------------------------------------------------------------- --> 
+
+<form name="quiz"><!-- start the FORM -->
+<!-- this form is wholly controlled by JavaScript, so all actions for 
+     the form are found in the JavaScript file (scripts/quiz.js) 
+     -->
+
+<ol> <!-- one big list contains all the questions -->
 
 <li>What does CSS stand for?</li>
-<ul>
-  <li><input type="radio" name="q1" value="colorful"> 
-  Colorful Style Symbols</li>
-  <li><input type="radio" name="q1" value="cascading"> 
-  Cascading Style Sheets</li>
-  <li><input type="radio" name="q1" value="computer"> 
-  Computer State Secrets</li>
+<ul> <!-- nested list -->
+  <li><input type="radio" name="q1" id="q1a" value="colorful"> 
+  <label for="q1a">Colorful Style Symbols</label></li>
+  <li><input type="radio" name="q1" id="q1b" value="cascading"> 
+  <label for="q1b">Cascading Style Sheets</label></li>
+  <li><input type="radio" name="q1" id="q1c" value="computer"> 
+  <label for="q1c">Computer State Secrets</label></li>
 </ul>
 
+<!-- labels are required for accessibility; they also make the text 
+     clickable (as well as the radio button). NOTE the correlation of 
+     ID in the INPUT tag with the for="" attribute in the LABEL tag! 
+     That is necessary. 
+     -->
+
 <li>What are the list types in HTML?</li>
-<ul>
-  <li><input type="radio" name="q2" value="ul_ol_dl"> 
-  UL, OL, DL</li>
-  <li><input type="radio" name="q2" value="alist"> 
-  A-list, B-list, C-list</li>
-  <li><input type="radio" name="q2" value="unlisted"> 
-  unlisted, overlisted, dynamic lists</li>
+<ul> <!-- nested list -->
+  <li><input type="radio" name="q2" id="q2a" value="ul_ol_dl"> 
+  <label for="q2a">UL, OL, DL</label></li>
+  <li><input type="radio" name="q2" id="q2b" value="alist"> 
+  <label for="q2b">A-list, B-list, C-list</label></li>
+  <li><input type="radio" name="q2" id="q2c" value="unlisted"> 
+  <label for="q2c">unlisted, overlisted, dynamic lists</label></li>
 </ul>
 
 <li>Which of the following are tags specific to HTML5?</li>
-<ul>
-  <li><input type="radio" name="q3" value="input"> 
-  input, textarea, submit, radio</li>
-  <li><input type="radio" name="q3" value="div"> 
-  div, head, img, body</li>
-  <li><input type="radio" name="q3" value="nav"> 
-  nav, article, footer, section</li>
+<ul> <!-- nested list -->
+  <li><input type="radio" name="q3" id="q3a" value="input"> 
+  <label for="q3a">input, textarea, submit, radio</label></li>
+  <li><input type="radio" name="q3" id="q3b" value="div"> 
+  <label for="q3b">div, head, img, body</label></li>
+  <li><input type="radio" name="q3" id="q3c" value="nav"> 
+  <label for="q3c">nav, article, footer, section</label></li>
 </ul>
 
 <li>What is the difference between JavaScript and Java?</li>
-<ul>
-  <li><input type="radio" name="q4" value="none"> 
-  There is no difference.</li>
-  <li><input type="radio" name="q4" value="flavor"> 
-  JavaScript is a "flavor" of Java.</li>
-  <li><input type="radio" name="q4" value="carpet"> 
-  Java and Javascript are similar like Car and Carpet are similar.</li>
+<ul> <!-- nested list -->
+  <li><input type="radio" name="q4" id="q4a" value="none"> 
+  <label for="q4a">There is no difference.</label></li>
+  <li><input type="radio" name="q4" id="q4b" value="flavor"> 
+  <label for="q4b">JavaScript is a "flavor" of Java.</label></li>
+  <li><input type="radio" name="q4" id="q4c" value="carpet"> 
+  <label for="q4c">Java and Javascript are similar like Car and Carpet are similar.</label></li>
 </ul>
 
-</ol>
+</ol> <!-- end of the big numbered list -->
 
 <div id="buttons">
-<!-- onClick="getScore(this.form) means "run the JavaScript function 
-     named getScore() and pass in the values from this form as the 
-     argument" - notice, it's NOT a submit button -->
+	<!-- onClick="getScore(this.form) means "run the JavaScript function 
+		 named getScore() and pass in the values from this form as the 
+		 argument" - notice, it's NOT a submit button -->
 
-<input class="btn" type="button" value="Get Score" onClick="getScore(this.form)"> 
+	<input class="btn" type="button" value="Get Score" onClick="getScore(this.form)"> 
 
-<!-- this is a standard reset button for HTML forms -->
-<input class="btn" type="reset" value="Clear Answers">
+	<!-- this is a standard reset button for all HTML forms -->
+	<input class="btn" type="reset" value="Clear Answers">
 </div>
 
-<p>Your score = <input name="percentage" type="text" class="textfield" size="5" disabled></p>
-<!-- disabled so users cannot type inside -->
+<p>Your score = <input name="percentage" type="text" class="textfield right" size="5" disabled></p>
+<!-- NOTE: disabled so users cannot type inside -->
 
 <p>Correct answers:</p>
 
 <textarea name="solutions" class="textfield" wrap="virtual" disabled></textarea> 
-<!-- disabled so users cannot type inside -->
+<!-- NOTE: the TEXTAREA is a tag pair, so don't forget the closing tag -->
+<!-- NOTE: disabled so users cannot type inside -->
 
-</form>
+</form> 
+<!-- always close your FORM tag! 
+     -------------------------------------------------------------------- --> 
 
 
 <p>Adapted from <a href="http://www.javascriptsource.com/miscellaneous/basic-javascript-quiz.html">The JavaScript Source</a></p>
 
-
+<p>Like this? Thank <a href="https://twitter.com/macloo">@macloo</a></p>
 
 </div>
+<script src="scripts/quiz.js"></script>
 </body>
 </html>
