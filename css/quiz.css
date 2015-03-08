@@ -49,10 +49,12 @@ input[type=radio] {
 	margin-right: 5px;
 	}
 
-input[type=text], textarea {
-	color: #000;
+/* fixes a color problem in iOS */
+input[disabled], textarea[disabled], select[disabled='disabled'] {
+	-webkit-text-fill-color: rgba(0, 0, 0, 1);
+	-webkit-opacity: 1;
+	color: rgba(0, 0, 0, 1);
 	}
-
 
 /* add a little space at the bottom of the form */
 form {
