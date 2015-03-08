@@ -1,6 +1,7 @@
 // some useful JavaScript 
 
 // this will generate a random number from 1 to 6, including 6 
+// without 1 +, you would have 0 to 5 
 var guess = 1 + Math.floor(Math.random() * 6);
 
 // ------------------ functions ------------------

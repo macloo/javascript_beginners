@@ -1,14 +1,14 @@
 Walkthrough: JavaScript Number Game
 ===================================
 
-This is a JavaScript exercise for beginners. After finishing the [Codecademy lessons from 1 through 8](http://www.codecademy.com/en/tracks/javascript), you should be able to make this game using the two files provided here:
+This is a JavaScript exercise for beginners. After finishing the [Codecademy lessons from 1 through 10](http://www.codecademy.com/en/tracks/javascript), you should be able to make this game using the two files provided here:
 
 + number.html
 + scripts/number.js
 
 Try to solve it with just those two files! Then, if you get stuck, read on here, below ...
 
-1. Start here:
+1. Start with a function:
 
     ```
         function playGame() {
@@ -19,7 +19,7 @@ Try to solve it with just those two files! Then, if you get stuck, read on here,
 
     ```
         function playGame() {
-            prompt("Type a number from 1 to 10:");
+            prompt("Type a number from 1 to 10: ");
         }
     ```
 
@@ -27,34 +27,34 @@ Try to solve it with just those two files! Then, if you get stuck, read on here,
 
     ```
         function playGame() {
-            var num = prompt("Type a number from 1 to 10:");
+            var num = prompt("Type a number from 1 to 10: ");
         }
     ```
 
-4. You also need to generate a random number and store it in a variable:
+4. You also need to generate a random number (from 1 to 10) and store it in a variable:
 
     ```
         function playGame() {
-            var num = prompt("Type a number from 1 to 10:");
+            var num = prompt("Type a number from 1 to 10: ");
             
             var guess = 1 + Math.floor(Math.random() * 10);
         }
     ```
 
-5. You need to tell the player whether the number is right or wrong, too high or too low:
+5. You need to tell the player whether the number is right or, if it is  wrong, too high or too low:
 
     ```
         function playGame() {
-            var num = prompt("Type a number from 1 to 10:");
+            var num = prompt("Type a number from 1 to 10: ");
             
             var guess = 1 + Math.floor(Math.random() * 10);
             
             if (num == guess) {
     	    	alert("You win! The number was " + guess + ".");
             } else if (num < guess) {
-        		num = prompt("Too low! You may guess again: ");
+        		num = prompt("Too low! You may guess again:  ");
             } else {
-    		    num = prompt("Too high! You may guess again: ");
+    		    num = prompt("Too high! You may guess again:  ");
         }
     ```
 
@@ -63,7 +63,7 @@ Try to solve it with just those two files! Then, if you get stuck, read on here,
 	+ What will happen each time?
 	+ What happens when he/she runs out of tries? 
 
-There's more to do; it's not all spelled out here.
+**There's more to do; it's not all spelled out here.**
 
 You can do a lot of things will this small game. You will learn a lot if you try to limit the number of guesses and give appropriate feedback to the player for each guess, for a win, and for losing.
 
@@ -71,4 +71,4 @@ NOTE: JavaScript running in the browser can be very unforgiving. If you miss one
 
 <http://www.jtoolkit.com/wp/2012/12/javascript-console-in-chrome/>
 
-However, the error messages are often not helpful. For example, “Uncaught ReferenceError: playGame is not defined” will appear when you have forgotten something, such as a curly brace.
+However, the **error messages** are often not helpful. For example, “Uncaught ReferenceError: playGame is not defined” will appear when you have forgotten something, such as a curly brace.
