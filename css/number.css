@@ -40,5 +40,5 @@ button:focus {
 /* media queries */
 
 @media only screen and (max-width: 740px) {
-	ol, ul { margin-left: 0; padding-left: 0; }
+	ol, ul { margin-left: 0; padding-left: 10px; }
 }
