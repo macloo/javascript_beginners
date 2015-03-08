@@ -6,6 +6,8 @@ This is a JavaScript exercise for beginners. You should be able to modify this q
 + quiz.html
 + scripts/quiz.js
 
-Your mission is to add one **new** complete question to the quiz. See if you can add it after the existing question 2 and before the existing question 3. You will need to modify the JavaScript file *as well as* the HTML file.
+Your mission is to add one **new** complete question to the quiz. Add it after the existing question 4. Be careful to follow all the formatting conventions for the names, IDs and labels in the HTML. 
+
+You will need to modify the JavaScript file *as well as* the HTML file. Otherwise, your new question will be ignored.
 
 Do not delete or change any of the four existing questions in the quiz.
