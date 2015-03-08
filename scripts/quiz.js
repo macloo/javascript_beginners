@@ -48,4 +48,6 @@ function getScore(form) {
     correctAnswers += i + ". " + answerstext[i-1] + "\n";
   }
   form.solutions.value = correctAnswers;
+  
+  return false;
 }

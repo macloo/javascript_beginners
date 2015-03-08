@@ -26,9 +26,11 @@
 <!-- a form must begin with a FORM tag 
      -------------------------------------------------------------------- --> 
 
-<form name="quiz"><!-- start the FORM -->
+<form action="" method="POST" onsubmit="return getScore(this);">
+<!-- start the FORM -->
 <!-- this form is wholly controlled by JavaScript, so all actions for 
      the form are found in the JavaScript file (scripts/quiz.js) 
+     NOTE: onsubmit="" requires a button with type="submit" 
      -->
 
 <ol> <!-- one big list contains all the questions -->
@@ -47,6 +49,8 @@
      clickable (as well as the radio button). NOTE the correlation of 
      ID in the INPUT tag with the for="" attribute in the LABEL tag! 
      That is necessary. 
+     The name="" attribute binds all these radio buttons into one set 
+     of answers for a single question. 
      -->
 
 <li>What are the list types in HTML?</li>
@@ -86,7 +90,7 @@
 		 named getScore() and pass in the values from this form as the 
 		 argument" - notice, it's NOT a submit button -->
 
-	<input class="btn" type="button" value="Get Score" onClick="getScore(this.form)"> 
+	<input class="btn" type="submit" value="Get Score"> 
 
 	<!-- this is a standard reset button for all HTML forms -->
 	<input class="btn" type="reset" value="Clear Answers">

@@ -34,6 +34,10 @@ textarea {
 	        border-radius: 0;
 	}
 
+.btn:focus {
+	outline: 1px solid #f00;
+	}
+
 .btn:hover {
     border: 1px solid #f00;
     background: #fff;
