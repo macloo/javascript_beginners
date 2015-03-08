@@ -22,7 +22,7 @@ answerstext.push("UL, OL, DL");
 answerstext.push("nav, article, footer, section");
 answerstext.push("Java and Javascript are similar like Car and Carpet are similar.");
 
-// Do not change anything below here ...
+// do not change anything below ...
 function getScore(form) {
   var score = 0;
   var currElt; // current element 
