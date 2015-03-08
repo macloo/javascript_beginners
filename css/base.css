@@ -1,51 +1,51 @@
-/* universal selector used to normalize box-sizing for all browsers
-   http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
-   */
+/* universal selector normalize box-sizing for all browsers */
 
 * {
-	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	margin: 0;  /* note the zeroing-out of all margins */
-	padding: 0; /* ... and all padding */
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 	}
 
 body {
 	font-family: Verdana, Arial, sans-serif;
-	font-size: 100%;
+	font-size: 1em;
+	line-height: 1.4em;
 	color: #000;
 	background: #fff;
+	margin, padding: 0;
 	}
 
 #wrapper {
 	margin: 20px auto;
-	width: 600px;
-	border: 1px solid #999;
-	padding-bottom: 20px;
+	max-width: 700px; /* responsive */
+	border: 2px solid #ccc;
+	padding: 20px 30px;
 	}
 
 /* heading and text styles */
 
 h1, h2 {
 	font-family: Cambria, Georgia, serif;
-	font-size: 200%;
+	font-size: 2em;
 	font-weight: normal;
-	padding: 20px;
-	line-height: 1.4em;
+	padding: 20px 0 10px 0;
 	}
 
-h2 { font-size: 160%; }
+h2 { font-size: 1.6em; }
 
 p {
 	margin-bottom: 20px;
-	padding: 0 20px;
-	line-height: 1.4em;
+	}
+
+em {
+	font-family: Georgia, serif;
+	font-size: 1.1em;
 	}
 
 /* links */
 
 a:focus {
-	outline: 2px solid #069;
+	outline: 2px solid #94bdd1;
 	}
 a:link, a:active, a:visited {
 	color: #00c;
@@ -55,3 +55,9 @@ a:hover {
 	color: #00f;
 	text-decoration: none;
 	}
+
+/* media queries */
+
+@media only screen and (max-width: 740px) {
+	#container { border: none; }
+}

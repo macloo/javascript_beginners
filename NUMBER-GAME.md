@@ -1,7 +1,7 @@
 Walkthrough: JavaScript Number Game
 ===================================
 
-This is a JavaScript exercise for beginners. After finishing the [Codecademy lessons from 1 through 8](http://www.codecademy.com/tracks/javascript), you should be able to make this game using the two files provided here:
+This is a JavaScript exercise for beginners. After finishing the [Codecademy lessons from 1 through 8](http://www.codecademy.com/en/tracks/javascript), you should be able to make this game using the two files provided here:
 
 + number.html
 + scripts/number.js

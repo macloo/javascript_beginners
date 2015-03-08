@@ -1,12 +1,11 @@
-/* special list styles */
+/* list styles added */
 
 ol, ul {
 	margin-left: 50px;
 	}
 
 ol ol {
-	padding-top: 10px;
-	margin-left: 30px;
+	margin-left: 20px;
 	}
 
 div > ol {
@@ -27,3 +26,14 @@ li {
 #wrapper {
 	padding-top: 20px;
 	}
+
+button {
+	display: block;
+	margin: 20px 0;
+	cursor: pointer;
+	}
+
+button:focus {
+	outline: 2px solid #94bdd1;
+	}
+
