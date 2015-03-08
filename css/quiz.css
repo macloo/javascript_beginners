@@ -49,6 +49,10 @@ input[type=radio] {
 	margin-right: 5px;
 	}
 
+input[type=text], textarea {
+	color: #000;
+	}
+
 
 /* add a little space at the bottom of the form */
 form {
